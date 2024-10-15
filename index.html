@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambling App - Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h1>Welcome to Gambling App</h1>
+            <p class="disclaimer">Disclaimer: Gambling can be addictive. Play responsibly.</p>
+
+            <div id="wallet">
+                <label for="amount">Add Money to Wallet:</label>
+                <input type="number" id="amount" placeholder="Enter amount">
+                <button onclick="addMoney()">Add Money</button>
+            </div>
+
+            <div id="success-message" class="hidden">
+                <div class="success-notification">
+                    <span class="checkmark">&#10004;</span>
+                    <span>Money added successfully!</span>
+                </div>
+            </div>
+
+            <button class="play-btn" onclick="goToGames()">Play Games</button>
+        </div>
+    </div>
+
+    <script>
+        function addMoney() {
+            const amount = parseInt(document.getElementById('amount').value);
+            if (amount > 0) {
+                localStorage.setItem('walletAmount', amount);
+                
+                document.getElementById('success-message').classList.remove('hidden');
+
+                setTimeout(() => {
+                    document.getElementById('success-message').classList.add('hidden');
+                }, 2000);
+            } else {
+                document.getElementById('amount').style.border = "2px solid red"; 
+            }
+        }
+
+        function goToGames() {
+            window.location.href = 'games.html';
+        }
+    </script>
+</body>
+</html>

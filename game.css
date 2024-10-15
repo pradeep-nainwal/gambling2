@@ -1,0 +1,73 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('back2.avif'); /* Add your gambling-themed background image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff; /* Set text color to white */
+}
+
+/* Header styles */
+header h1 {
+    color: #ffcc00;;
+    font-size: 4em;
+    margin-top: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Add a shadow to make text pop */
+}
+
+/* Games container */
+.games-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 50px 0; /* Add spacing around the container */
+}
+
+/* Game box styles */
+.game-box {
+    width: 250px;
+    padding: 20px;
+    background-color: rgba(50, 50, 50, 0.85); /* Darker container to match theme */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid #444; /* Slightly thicker border for better contrast */
+}
+
+/* Game box image */
+.game-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Game box heading */
+.game-box h2 {
+    color: #ffcc00; /* Bright gold color for headings */
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+/* Game box paragraph */
+.game-box p {
+    color: #ddd; /* Light gray for the text */
+    margin-top: 10px;
+}
+
+/* Hover effect on game box */
+.game-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+/* Add hover effect for game link */
+.game-link {
+    text-decoration: none;
+    color: inherit; /* Ensure the color remains consistent */
+}

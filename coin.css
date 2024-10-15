@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('back2.avif'); /* Use the correct path */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    color: #f0f0f0; /* Light text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.navbar {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark navbar */
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.wallet {
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items to the top */
+    width: 80%;
+    margin-top: 20px;
+}
+
+.game-box, .result-box {
+    background-color: rgba(42, 42, 42, 0.8); /* Semi-transparent dark box background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    width: 45%; /* Each box takes up 45% of the width */
+    text-align: center;
+}
+
+h2 {
+    color: #ffdd57; /* Lighter heading color for contrast */
+    margin-bottom: 15px;
+}
+
+.coin-con {
+    perspective: 1000px; /* Adds perspective for 3D effect */
+}
+
+#coin {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    transition: transform 0.7s; /* Smooth transition for flipping */
+}
+
+.flip {
+    animation: flip 0.7s forwards; /* Flip animation */
+}
+
+@keyframes flip {
+    0% { transform: rotateY(0); }
+    50% { transform: rotateY(180deg); }
+    100% { transform: rotateY(0); }
+}
+
+.game-setup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 80%; /* Full width input */
+    margin-bottom: 10px;
+    border: 1px solid #555; /* Darker border */
+    border-radius: 5px;
+    background-color: #444; /* Dark input background */
+    color: #f0f0f0; /* Light text color for input */
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ffdd57; /* Button background */
+    color: #1c1c1c; /* Darker text color for button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+button:hover {
+    background-color: #e6c62a; /* Darker shade on hover */
+}
+
+.result-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#babyImage {
+    width: 100px; /* Adjust size for baby image */
+    height: 100px; /* Adjust size for baby image */
+    display: block; /* Ensure it is displayed */
+    margin: 10px auto; /* Center image */
+}
+
+.count-container {
+    margin-top: 10px;
+}

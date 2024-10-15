@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head-Tail Game</title>
+    <link rel="stylesheet" href="coin.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="wallet">
+            Wallet: <span id="walletAmount">₹0</span>
+        </div>
+    </div>
+
+    <div class="container"> <!-- Added main container -->
+        <div class="game-box"> <!-- Game setup box -->
+            <h2>Game Setup</h2>
+            <div class="coin-con" id="coinContainer">
+                <img src="head.png" alt="Coin" id="coin">
+            </div>
+            <div class="game-setup">
+                <input type="number" id="betAmount" placeholder="Enter bet amount">
+                <label>
+                    <input type="checkbox" id="forceLose"> Always Lose (Cheat Mode)
+                </label>
+            </div>
+            <button id="headButton">Head</button>
+            <button id="tailButton">Tail</button>
+        </div>
+
+        <div class="result-box"> <!-- Result and count box -->
+            <h2>Results</h2>
+            <div class="result-container">
+                <img id="babyImage" src="" alt="Baby Result" style="display:none;">
+                <p id="resultText" class="result" style="display:none;"></p>
+                <div class="count-container">
+                    <p>No. of Heads: <span id="headCount">0</span></p>
+                    <p>No. of Tails: <span id="tailCount">0</span></p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End of main container -->
+
+    <script src="coin.js"></script>
+</body>
+</html>

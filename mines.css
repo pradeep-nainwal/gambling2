@@ -1,0 +1,115 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('back2.avif'); /* Add the gambling-themed background */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent for a sleek effect */
+    color: white;
+    padding: 10px 0;
+    font-size: 1.5em;
+}
+
+/* Wallet display */
+.wallet {
+    font-size: 1.5em;
+    color: #ffcc00; /* Gold color for the wallet amount */
+}
+
+/* Game setup container */
+.game-setup {
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 2px solid #444;
+    background-color: rgba(50, 50, 50, 0.85); /* Darker input fields */
+    color: #fff;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Board grid styling */
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Board cell styling */
+.board div {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(50, 50, 50, 0.85); /* Darker game cells */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid #ffcc00; /* Gold border for game cells */
+    transition: background-color 0.3s ease;
+}
+
+.board div:hover {
+    background-color: rgba(100, 100, 100, 0.85);
+}
+
+/* Image inside board cells */
+/* Adjust image size inside game cells */
+img.cell-image {
+    width: 100%; /* Make the image take up the full width of the cell */
+    height: 100%; /* Make the image take up the full height of the cell */
+    object-fit: contain; /* Ensures the image fits within the cell without distortion */
+    border-radius: 5px; /* Optional: Adds a slight rounding to the corners of the image */
+}
+
+/* Claim winnings container */
+.claim-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 20px;
+}
+
+/* Claim winnings button */
+#claimWinnings {
+    background-color: #ff8c00; /* Orange color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#claimWinnings:hover {
+    background-color: #e07b00; /* Darker orange on hover */
+}

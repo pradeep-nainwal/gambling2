@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines Game</title>
+    <link rel="stylesheet" href="mines.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="wallet">
+            Wallet: <span id="walletAmount">₹0</span>
+        </div>
+    </div>
+
+    <div class="game-setup">
+        <input type="number" id="betAmount" placeholder="Enter bet amount">
+        <input type="number" id="minesCount" placeholder="Enter number of mines (1-10)">
+        <button id="startGame">Start Game</button>
+        <label>
+            <input type="checkbox" id="forceLose"> Always Lose (Cheat Mode)
+        </label>
+    </div>
+
+    <div id="gameBoard" class="board"></div>
+
+    <div class="claim-container">
+        <button id="claimWinnings" style="display:none;">Claim Winnings</button>
+    </div>
+
+    <script src="mines.js"></script>
+</body>
+</html>
